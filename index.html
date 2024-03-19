@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+    
+    
+    <style>
+        /*ELEMENT*/
+        p{
+            color: red;
+        }
+        /*CREATED ATTRIBUTE*/
+        [secondPara] {
+            font-size: 30px;
+        }
+        /*SYSTEM ATTRIBUTE*/
+        [title] {
+            font-style: italic;
+
+        }
+        /*PSEUDO ELEMENT*/
+        p::first-letter{
+            color: black;
+        }
+        /*PSEUDO CLASSES*/
+        p:hover{
+            background-color: black;
+            color: white;
+        }
+        #para::first-letter{
+            color: green;
+        }
+        p#para{
+            color: green;
+        }
+        h1 {
+            position:relative;
+        }
+        h1::after{
+            position: absolute;
+            top:0;
+            right: 0;
+            content: "";
+            border: 1px solid;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .h2heading{
+            color: brown;
+        }
+        [heading2] {color: green;}
+    </style>
+</head>
+<body>
+    <p style="color: blue;">This is the first paragraph</p>
+    <p secondPara>This second one</p>
+    <p title="Thirdparagraph">This one belongs to Emmanuel</p>
+    <p id="para">Third paragraph</p>
+    
+    <h1>Hello World</h1>
+    <h2 heading2 class="h2heading">H2 Heading</h2>
+
+</body>
+</html>
